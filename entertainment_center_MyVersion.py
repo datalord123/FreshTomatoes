@@ -1,6 +1,9 @@
 import media
 import fresh_tomatoes
 
+#Create six Movie instances.
+#Each instance represents a new movie, with their respective attributes
+# Movie Name,Movie Description,Teaser Image URL,Teaser Trailer URL, and then a quick review
 Deadpool=media.Movie("Deadpool",
 	"Ryan Reynolds, The Movie!! ",
 	"http://www.joblo.com/newsimages1/deadpool-teaser-poster-small.jpg",
@@ -38,11 +41,6 @@ AmericanSniper=media.Movie("American Sniper",
 	"America!!")
 
 movies=[Deadpool,TheHangover,Revanent,TheoryOfEverything,TheMartian,AmericanSniper]
+#Run the open movie's funtion that I imported from the fresh tomatoes file, and pass in 
+#The movies list
 fresh_tomatoes.open_movies_page(movies)
-#print(toy_story.storyline)
-#print(avatar.storyline)
-#avatar.show_trailer()
-#print(media.Movie.VALID_RATINGS)
-#print(media.Movie.__doc__)
-#print(media.Movie.__name__)
-#print(media.Movie.__module__)
